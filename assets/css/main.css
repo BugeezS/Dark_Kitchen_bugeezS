@@ -133,6 +133,16 @@ main {
   padding: 0 5px;
 }
 
+aside {
+  display: none;
+  height: 40%;
+  width: 35%;
+  right: 0;
+  position: fixed;
+  background: gray;
+  border: solid 3px greenyellow;
+}
+
 @media screen and (max-width: 400px) {
   main {
     max-width: 400px;
@@ -197,12 +207,12 @@ main {
   transform: translateX(calc(var(--width) - var(--height)));
 }
 
-body {
+main {
   background-color: #ffffff;
   color: #333333;
 }
 
-body.dark-mode {
+main.dark-mode {
   background-color: #333333;
   color: #ffffff;
 }
@@ -211,13 +221,22 @@ body.dark-mode {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #1195a1;
 }
 .listTri li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  border: solid 3px white;
+  border-radius: 10px 10px 0 0;
+  background-color: #21ecf3;
+  box-shadow: 0 -3px 3px 3px rgba(0, 0, 0, 0.185);
+  padding: 5px;
+  font-size: 1.5em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-transform: capitalize;
   cursor: pointer;
   float: left;
-  border: 0.5px solid lightgray;
   padding: 5px;
 }
 
@@ -300,6 +319,16 @@ main {
   line-height: 20px;
   font-size: 1.3em;
   padding: 0 5px;
+}
+
+aside {
+  display: none;
+  height: 40%;
+  width: 35%;
+  right: 0;
+  position: fixed;
+  background: gray;
+  border: solid 3px greenyellow;
 }
 
 @media screen and (max-width: 400px) {
